@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ej1guia1;
+package EJERCICIOSGUIA1;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author GastonG
  */
-public class Ej1Guia1 {
+public class Ej4Guia1 {
 
     /**
      * @param args the command line arguments
@@ -20,23 +20,12 @@ public class Ej1Guia1 {
         
         Scanner leer = new Scanner(System.in);
         
-        int num;
-        int num2;
-        int resultado;
+        System.out.println("Ingrese los grados centigrados que desea mostrar en Fahrenheit");
+        int grados = leer.nextInt();
         
-        System.out.println("Ingrese su primer numero");
-        num = leer.nextInt();
+        float Fahr = 32 + (9*grados/5);
         
-        System.out.println("Ingrese su segundo numero");
-        num2= leer.nextInt();
-        
-        resultado = num + num2;
-        
-        System.out.println("El resultado de los numeros ingresados es: " + resultado);
-        
-        
-        
-        
+        System.out.println("Los grados centigrados("+ grados+"), equivalen a " +Fahr+ " grados Fahrenheit");
     }
     
 }
